@@ -31,8 +31,8 @@ Configuracao de Ambiente:
 
 Aula 01:
   - https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c
-  - #missaoespacial
+
 
 Aula 02:
   - https://www.notion.so/Dia-2-Iniciando-com-o-Banco-de-Dados-37250e7144b04d158f7a338e7637c986
-  - #embuscadoproximonivel
+  
