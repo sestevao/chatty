@@ -40,12 +40,7 @@ Aula 01:
 
 Aula 02:
   - https://www.notion.so/Dia-2-Iniciando-com-o-Banco-de-Dados-37250e7144b04d158f7a338e7637c986
-<<<<<<< HEAD
 
 
 Aula 03:
   - https://www.notion.so/danileao/Dia-3-Continuando-a-nossa-aplica-o-2d59e5f2d5d94081b205cc9db55637b2
-
-=======
-  
->>>>>>> f038c9eba76b7200f7e009b031e621b3cf44938f
