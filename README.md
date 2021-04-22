@@ -27,6 +27,18 @@ Comandos para iniciar o projeto
   - yarn add uuid
   - yarn add @types/uuid -D
 
+  - yarn typeorm migration:create -n CreateUsers
+  - yarn typeorm migration:run
+  - yarn typeorm migration:create -n CreateMessages
+  - yarn typeorm migration:run
+
+  - yarn add socket.io
+  - yarn add @types/socket.io -D
+  - yarn add ejs
+  - yarn add socket.io-client
+  - yarn typeorm migration:create -n CreateConnections
+  - yarn typeorm migration:run
+
 
 
 Configuracao de Ambiente:
@@ -44,3 +56,7 @@ Aula 02:
 
 Aula 03:
   - https://www.notion.so/danileao/Dia-3-Continuando-a-nossa-aplica-o-2d59e5f2d5d94081b205cc9db55637b2
+
+
+Aula 04:
+  - https://www.notion.so/danileao/Dia-4-Trabalhando-com-Websocket-236b68d36a2c4416930aff0bd0f42594

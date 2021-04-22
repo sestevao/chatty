@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import {MigrationInterface, QueryRunner, Table, TableForeignKey} from "typeorm";
 
 export class CreateConnections1618948139679 implements MigrationInterface {
 
@@ -22,6 +22,10 @@ export class CreateConnections1618948139679 implements MigrationInterface {
                         type: "uuid",
                     },
                     {
+                        name: "socket_id",
+                        type: "varchar",
+                    },
+                    {
                         name: "updated_at",
                         type: "timestamp",
                         default: "now()",
@@ -30,24 +34,26 @@ export class CreateConnections1618948139679 implements MigrationInterface {
                         name: "created_at",
                         type: "timestamp",
                         default: "now()",
-                    },
+                    }
                 ],
-                foreignKeys: [
-                    {
-                      name: "FKUser",
-                      referencedTableName: "users",
-                      referencedColumnNames: ["id"],
-                      columnNames: ["user_id"],
-                      onDelete: "SET NULL",
-                      onUpdate: "SET NULL"
-                    },
-                ]
+            })
+        )
+
+        await queryRunner.createForeignKey(
+            "connections",
+            new TableForeignKey({
+                name: "FKConnectionUser",
+                referencedTableName: "users",
+                referencedColumnNames: ["id"],
+                columnNames: ["user_id"],
+                onDelete: "SET NULL",
+                onUpdate: "SET NULL"
             })
         )
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropForeignKey("connections", "FKConnectionUser")
         await queryRunner.dropTable("connections")
     }
-
 }

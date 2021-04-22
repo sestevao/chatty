@@ -1,9 +1,10 @@
 import {Entity, Column, CreateDateColumn, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm'
 import {v4 as uuid} from 'uuid'
-import { Users } from './Users'
+import { Users } from './User'
 
 @Entity("messages")
 class Message {
+
   @PrimaryColumn()
   id: string;
 
