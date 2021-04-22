@@ -1,7 +1,10 @@
 #nextlevelweek 05
 
+
 Descricao do Projeto:
   - Chat com websockets
+
+
 
 Comandos para iniciar o projeto
   - yarn init -y
@@ -25,14 +28,20 @@ Comandos para iniciar o projeto
   - yarn add @types/uuid -D
 
 
+
 Configuracao de Ambiente:
   - https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68
 
 
+
 Aula 01:
   - https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c
-  - #missaoespacial
+
 
 Aula 02:
   - https://www.notion.so/Dia-2-Iniciando-com-o-Banco-de-Dados-37250e7144b04d158f7a338e7637c986
-  - #embuscadoproximonivel
+
+
+Aula 03:
+  - https://www.notion.so/danileao/Dia-3-Continuando-a-nossa-aplica-o-2d59e5f2d5d94081b205cc9db55637b2
+
