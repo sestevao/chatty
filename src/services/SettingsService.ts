@@ -15,28 +15,19 @@ class SettingsService {
   }
 
   async create({chat,username} : ISettingsCreate){
-
     //select * from settings where username='username' limit 1
-    const userExists = await this.settingsRepository.findOne({
-      username
-    })
-
+    const userExists = await this.settingsRepository.findOne({ username })
     if(userExists){
       throw new Error("User already exists!")
     }
 
-    const settings = this.settingsRepository.create({
-      chat,
-      username
-    })
+    const settings = this.settingsRepository.create({ chat, username })
     await this.settingsRepository.save(settings)
     return settings
   }
 
   async findByUsername(username: string){
-    const settings = await this.settingsRepository.findOne({
-      username
-    })
+    const settings = await this.settingsRepository.findOne({ username })
     return settings
   }
 
@@ -44,10 +35,8 @@ class SettingsService {
     await this.settingsRepository.createQueryBuilder()
       .update(Settings)
       .set({chat})
-      .where("username = :username", {
-        username
-      }).execute()
-
+      .where("username = :username", { username })
+      .execute()
   }
 }
 

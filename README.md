@@ -1,9 +1,8 @@
-<h2 align="center"> <img src="https://github.com/susanaestevao/chatty/blob/main/public/images/chat-bot.jpg?raw=true" width="150px" style="border-radius: 50%; "/></h2>
+<h2 align="center"><img width="150px" style="border-radius: 50%;" src="https://github.com/susanaestevao/chatty/blob/main/public/images/chat-bot.jpg?raw=true" /></h2>
 
 <h2 align="center">Real time support chat with websockets</h2>
 
 <p align="center" style="color: lightblue">“What we know is a drop. <br>What we ignore is an ocean.”</p>
-
 
 </br>
 
@@ -11,7 +10,9 @@
 
 The support-chat is an app that offers a real-time support chat (like those E-commerce chats)
 
-This pProject was developed during the NodeJS path in the fifth edition of NLW (Next Level Week). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
+This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
+
+</br>
 
 # ✨ Technologies
 
@@ -21,6 +22,11 @@ This pProject was developed during the NodeJS path in the fifth edition of NLW (
   - [TypeORM](https://typeorm.io/#/)
   - [SQL Editor Beekeeper Studio](https://www.beekeeperstudio.io/)
   - [Insomnia](https://insomnia.rest/)
+  - [Socket.io](https://socket.io/)
+  - [Mustache](https://mustache.github.io/)
+
+
+</br>
 
 # 🚀 How to run
 
@@ -30,6 +36,7 @@ This pProject was developed during the NodeJS path in the fifth edition of NLW (
 
 You can access the app typing [`localhost:3333`](http://localhost:3333) on your favorite browser.
 
+</br>
 
 # ⌨️ Commands to start/during the project
 
@@ -49,7 +56,7 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
 
   - change on file `tsconfig.json`
     ```bash
-    script: false
+    "script": false
     ```
 
 ```bash
@@ -81,11 +88,16 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
   $ yarn typeorm migration:create -n CreateConnections
   $ yarn typeorm migration:run
 ```
+```bash
+  $ yarn add mustache
+```
 
+</br>
 
 # 📚 Environment Configuration:
   - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 
+</br>
 
 # 📄 Classes on Notion
 - [Notion - Class 01](https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c)
@@ -100,5 +112,5 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
 - [Notion - Class 04](https://www.notion.so/danileao/Dia-4-Trabalhando-com-Websocket-236b68d36a2c4416930aff0bd0f42594)
 #universoinfinito
 
-- [Notion - Class 05]()
-#
+- [Notion - Class 05](https://www.notion.so/danileao/Dia-5-Finalizando-o-projeto-11f69d2452644dea9c6e4a9d2af07537)
+#missaocumprida
