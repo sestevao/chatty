@@ -1,8 +1,4 @@
-<h2 align="center"> <img src="https://github.com/susanaestevao/chatty/blob/main/public/images/chat-bot.jpg?raw=true" width=150px" style="border-radius: 50%; "/></h2>
-
-
-
-
+<h2 align="center"> <img src="https://github.com/susanaestevao/chatty/blob/main/public/images/chat-bot.jpg?raw=true" width="150px" style="border-radius: 50%; "/></h2>
 
 <h2 align="center">Real time support chat with websockets</h2>
 
