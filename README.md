@@ -1,4 +1,11 @@
-<h1 align="center">Real time support chat with websockets</h1>
+<h2 align="center"><img src="./public/images/chat-bot.jpg" width=150px" style="border-radius: 50%; "/></h2>
+
+<h2 align="center">Real time support chat with websockets</h2>
+
+<p align="center" style="color: lightblue">“What we know is a drop. <br>What we ignore is an ocean.”</p>
+
+
+</br>
 
 # 💻 Project
 
