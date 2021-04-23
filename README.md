@@ -1,62 +1,97 @@
-#nextlevelweek 05
+<h1 align="center">Real time support chat with websockets</h1>
+
+# 💻 Project
+
+The support-chat is an app that offers a real-time support chat (like those E-commerce chats)
+
+This pProject was developed during the NodeJS path in the fifth edition of NLW (Next Level Week). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
+
+# ✨ Technologies
+
+  - [Node.js](https://nodejs.org/en/)
+  - [Express](https://expressjs.com/)
+  - [Typescript](https://www.typescriptlang.org/)
+  - [TypeORM](https://typeorm.io/#/)
+  - [SQL Editor Beekeeper Studio](https://www.beekeeperstudio.io/)
+  - [Insomnia](https://insomnia.rest/)
+
+# 🚀 How to run
+
+- Clone this repo
+- Install all dependencies with `yarn`
+- Start the server with `yarn dev`
+
+You can access the app typing [`localhost:3333`](http://localhost:3333) on your favorite browser.
 
 
-Descricao do Projeto:
-  - Chat com websockets
+# ⌨️ Commands to start/during the project
+
+```bash
+  $ yarn init -y
+  $ yarn add express
+  $ yarn add @types/express -D
+  $ yarn add typescript -D
+  $ yarn tsc --init
+  $ yarn add ts-node-dev -D
+  $ yarn dev
+```
+  - add line in file `package.json`
+    ```bash
+    "scripts": { "dev": "ts-node-dev src/server.ts" }
+    ```
+
+  - change on file `tsconfig.json`
+    ```bash
+    script: false
+    ```
+
+```bash
+  $ yarn add typeorm reflect-metadata sqlite3 sqlite
+  $ yarn typeorm migration:create -n CreateSettings
+  $ yarn typeorm migration:run
+  $ yarn add uuid
+  $ yarn add @types/uuid -D
+```
+  - change `tsconfig.json`
+    - uncomment
+      ```bash
+      "experimentalDecorators": true
+
+      "emitDecoratorMetadata": true
+      ```
+
+```bash
+  $ yarn typeorm migration:create -n CreateUsers
+  $ yarn typeorm migration:run
+  $ yarn typeorm migration:create -n CreateMessages
+  $ yarn typeorm migration:run
+```
+```bash
+  $ yarn add socket.io
+  $ yarn add @types/socket.io -D
+  $ yarn add ejs
+  $ yarn add socket.io-client
+  $ yarn typeorm migration:create -n CreateConnections
+  $ yarn typeorm migration:run
+```
 
 
-
-Comandos para iniciar o projeto
-  - yarn init -y
-  - yarn add express
-  - yarn add @types/express -D
-  - yarn add typescript -D
-  - yarn tsc --init
-    - change "script": true para false
-  - yarn add ts-node-dev -D
-    - adicionar linha no ficheiro "package.json"
-      - "scripts":{ "dev": "ts-node-dev src/server.ts" }
-  - yarn dev
-
-  - yarn add typeorm reflect-metadata sqlite3 sqlite
-  - yarn typeorm migration:create -n CreateSettings
-  - yarn typeorm migration:run
-  - change "tsconfig.json"
-    - descomentar "experimentalDecorators": true
-    - descomentar "emitDecoratorMetadata": true
-  - yarn add uuid
-  - yarn add @types/uuid -D
-
-  - yarn typeorm migration:create -n CreateUsers
-  - yarn typeorm migration:run
-  - yarn typeorm migration:create -n CreateMessages
-  - yarn typeorm migration:run
-
-  - yarn add socket.io
-  - yarn add @types/socket.io -D
-  - yarn add ejs
-  - yarn add socket.io-client
-  - yarn typeorm migration:create -n CreateConnections
-  - yarn typeorm migration:run
+# Environment Configuration:
+  - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 
 
+# Classes on Notion
+- [Notion - Class 01](https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c)
+#missaoespacial
 
-Configuracao de Ambiente:
-  - https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68
+- [Notion - Class 02](https://www.notion.so/Dia-2-Iniciando-com-o-Banco-de-Dados-37250e7144b04d158f7a338e7637c986)
+#embuscadoproximonivel
 
+- [Notion - Class 03](https://www.notion.so/danileao/Dia-3-Continuando-a-nossa-aplica-o-2d59e5f2d5d94081b205cc9db55637b2)
+#astronautas
 
+- [Notion - Class 04](https://www.notion.so/danileao/Dia-4-Trabalhando-com-Websocket-236b68d36a2c4416930aff0bd0f42594)
+#universoinfinito
 
-Aula 01:
-  - https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c
-
-
-Aula 02:
-  - https://www.notion.so/Dia-2-Iniciando-com-o-Banco-de-Dados-37250e7144b04d158f7a338e7637c986
-
-
-Aula 03:
-  - https://www.notion.so/danileao/Dia-3-Continuando-a-nossa-aplica-o-2d59e5f2d5d94081b205cc9db55637b2
-
-
-Aula 04:
-  - https://www.notion.so/danileao/Dia-4-Trabalhando-com-Websocket-236b68d36a2c4416930aff0bd0f42594
+- [Notion - Class 05]()
+#
