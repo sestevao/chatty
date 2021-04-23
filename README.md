@@ -76,11 +76,11 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
 ```
 
 
-# Environment Configuration:
+# 📚 Environment Configuration:
   - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 
 
-# Classes on Notion
+# 📄 Classes on Notion
 - [Notion - Class 01](https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c)
 #missaoespacial
 
