@@ -2,7 +2,7 @@
 
 <h2 align="center">Real time support chat with websockets</h2>
 
-<p align="center" style="color: lightblue">“What we know is a drop. <br>What we ignore is an ocean.”</p>
+<p align="center" style="color: lightblue">“What we know is a drop. <br>What we ignore is an ocean.” - *Isaac Newton*</p>
 
 </br>
 
