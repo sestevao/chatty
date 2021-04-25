@@ -20,7 +20,7 @@ This project was developed during the Node.js path in the fifth edition of NLW (
   - [Express](https://expressjs.com/)
   - [Typescript](https://www.typescriptlang.org/)
   - [TypeORM](https://typeorm.io/#/)
-  - [SQL Editor Beekeeper Studio](https://www.beekeeperstudio.io/)
+  - [Beekeeper Studio](https://www.beekeeperstudio.io/)
   - [Insomnia](https://insomnia.rest/)
   - [Socket.io](https://socket.io/)
   - [Mustache](https://mustache.github.io/)
