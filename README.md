@@ -6,7 +6,7 @@
 
 </br>
 
-# 💻 Project
+## 💻 Project
 
 The support-chat is an app that offers a real-time support chat (like those E-commerce chats)
 
@@ -14,7 +14,7 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 
 </br>
 
-# ✨ Technologies
+## ✨ Technologies
 
   - [Node.js](https://nodejs.org/en/)
   - [Express](https://expressjs.com/)
@@ -28,7 +28,7 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 
 </br>
 
-# 🚀 How to run
+## 🚀 How to run
 
 - Clone this repo
 - Install all dependencies with `yarn`
@@ -38,7 +38,7 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
 
 </br>
 
-# ⌨️ Commands to start/during the project
+## ⌨️ Commands to start/during the project
 
 ```bash
   $ yarn init -y
@@ -49,15 +49,16 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
   $ yarn add ts-node-dev -D
   $ yarn dev
 ```
-  - add line in file `package.json`
-    ```bash
-    "scripts": { "dev": "ts-node-dev src/server.ts" }
-    ```
 
-  - change on file `tsconfig.json`
-    ```bash
-    "script": false
-    ```
+```bash
+# add line in file `package.json`
+"scripts": { "dev": "ts-node-dev src/server.ts" }
+```
+
+```bash
+# change on file `tsconfig.json`
+"script": false
+```
 
 ```bash
   $ yarn add typeorm reflect-metadata sqlite3 sqlite
@@ -66,13 +67,12 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
   $ yarn add uuid
   $ yarn add @types/uuid -D
 ```
-  - change `tsconfig.json`
-    - uncomment
-      ```bash
-      "experimentalDecorators": true
 
-      "emitDecoratorMetadata": true
-      ```
+```bash
+#change `tsconfig.json` uncomment
+"experimentalDecorators": true
+"emitDecoratorMetadata": true
+```
 
 ```bash
   $ yarn typeorm migration:create -n CreateUsers
@@ -94,12 +94,12 @@ You can access the app typing [`localhost:3333`](http://localhost:3333) on your 
 
 </br>
 
-# 📚 Environment Configuration:
+## 📚 Environment Configuration:
   - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 
 </br>
 
-# 📄 Classes on Notion
+## 📄 Classes on Notion
 - [Notion - Class 01](https://www.notion.so/Dia-1-Fundamentos-do-NodeJS-9a12b63d65ee480bbc71e173bcc20d2c)
 #missaoespacial
 
