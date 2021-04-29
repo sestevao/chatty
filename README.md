@@ -20,12 +20,12 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 
 ## 🚀 Features
 
-- [ ]  Administrator
+- [x]  Administrator
     - [ ]  Turn chat on and off
     - [ ]  Check which users have not yet been served
     - [ ]  Upon entering the service the user leaves the list of pending
     - [ ]  Receive and send messages in real time
-- [ ]  Client
+- [x]  Client
     - [ ]  Enter chat
     - [ ]  Receive and send messages in real time
 
@@ -51,7 +51,7 @@ To run aplication we need have installed:
 - [Beekeeper Studio](https://www.beekeeperstudio.io/)
 - [Insomnia](https://insomnia.rest/)
 
-</>
+<br>
 
 ## ⚡ How to run
 
