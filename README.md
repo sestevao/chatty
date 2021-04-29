@@ -44,11 +44,11 @@ To run aplication we need have installed:
 - Start the server with `yarn dev`
 
 To run this app in a web browser
-navigate to [localhost:3333/pages/admin](localhost:3333/pages/admin) and [localhost:3333/pages/client](localhost:3333/pages/client) and enjoy sending messages.
+navigate to `localhost:3333/pages/admin` and `localhost:3333/pages/client` and enjoy sending messages.
 
 </br>
 
 ## 📚 Environment Configuration:
 - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 
--[My notes on Notion](https://www.notion.so/Trilha-Node-js-99e5035e5dfb425fa86292f91ff352ba)
+- [My notes on Notion](https://www.notion.so/Trilha-Node-js-99e5035e5dfb425fa86292f91ff352ba)
