@@ -1,5 +1,5 @@
 <div align="center">
-  <img width=150 style="border-radius:50%;" src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" />
+  <img style="border-radius:50%;" src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" width=150 />
 </div>
 
 <h2 align="center">Real time support chat with websockets</h2>
