@@ -1,5 +1,14 @@
-import {Entity, Column, CreateDateColumn, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm'
-import {v4 as uuid} from 'uuid'
+import {
+  Entity,
+  Column,
+  CreateDateColumn,
+  PrimaryColumn,
+  ManyToOne,
+  JoinColumn,
+  UpdateDateColumn
+} from 'typeorm'
+import { v4 as uuid } from 'uuid'
+
 import { Users } from './User'
 
 @Entity("connections")
@@ -11,7 +20,7 @@ class Connection {
   @Column()
   admin_id: string;
 
-  @JoinColumn({name: "user_id"})
+  @JoinColumn({ name: "user_id" })
   @ManyToOne(() => Users)
   user: Users;
 
@@ -21,14 +30,14 @@ class Connection {
   @Column()
   socket_id: string;
 
-  @CreateDateColumn()
+  @UpdateDateColumn()
   updated_at: Date;
 
   @CreateDateColumn()
   created_at: Date;
 
-  constructor(){
-    if(!this.id)
+  constructor() {
+    if (!this.id)
       this.id = uuid()
   }
 }

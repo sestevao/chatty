@@ -4,6 +4,7 @@ import { ConnectionsService } from "../services/ConnectionsService"
 class ConnectionsController{
   async create(req:Request, res:Response){
     const { admin_id, id, user_id, socket_id } = req.body
+    
     const connectionsService = new ConnectionsService()
 
     try{

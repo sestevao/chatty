@@ -6,7 +6,29 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8257e6 #eee;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8257e6;
+  border-radius: 20px;
+  border: 3px solid #eee;
 }
 
 .btn_support {
@@ -42,12 +64,10 @@ body {
 
 .in_support_header {
   float: right;
-  width: 320px;
+  width: 400px;
   height: 56px;
-
   background: #8257e6;
   border-radius: 16px 16px 0px 0px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -64,11 +84,16 @@ body {
   cursor: pointer;
 }
 
+.icon_close:hover {
+  opacity: 0.7;
+}
+
 .chat_support {
   position: absolute;
-  max-width: 330px;
+  max-width: 410px;
   right: 10px;
   animation: up 1s;
+  bottom: 120px;
 }
 
 .chat_support_hide {
@@ -97,40 +122,58 @@ body {
 }
 
 .client {
+  float: right;
+  width: 250px;
+  background: #6f5eab;
+  padding: 10px;
+  margin: 10px;
+  color: #eee;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .client .name {
   text-align: end;
-}
-
-.client_message {
-  background: #f2ecfa;
-  padding: 20px 10px;
-  margin: 10px 0;
-  width: 250px;
-  margin-left: 30px;
-  border-radius: 4px;
-  line-height: 20px;
+  font-size: 11px;
+  font-weight: 400;
 }
 
 .client .message {
-  background: #f2ecfa;
-  /* background: #cecad4; */
-  padding: 20px 10px;
-  margin: 10px 0;
-  width: 250px;
-  margin-left: 30px;
-  border-radius: 4px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.client_message {
+  padding-left: 10px;
+  margin: 10px 0 10px 30px;
   line-height: 20px;
+}
+
+.client_message_add {
+  color: #6f5eab;
 }
 
 .text_support {
   border: 1px solid #cec9c9;
   max-height: 500px;
   overflow-y: scroll;
-  /* border-bottom: 0px; */
+  background-color: #fff;
+}
+
+.admin_front {
+  float: letf;
+  width: 250px;
+  background: #28cb73;
+  color: #eee;
+  padding: 10px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .admin {
@@ -138,12 +181,8 @@ body {
   flex-direction: column;
 }
 
-.admin .message {
-  width: 230px;
-  background: #f2ecfa;
-  border-radius: 4px;
-  padding: 10px;
-  margin-left: 12px;
+.admin_message_return {
+  color: #eee;
 }
 
 .message_send {
@@ -151,18 +190,24 @@ body {
   justify-content: space-between;
   border: 1px solid #cec9c9;
   align-items: center;
+  background-color: #fff;
 }
 
 .message_send input {
   outline: none;
   height: 34px;
   align-items: center;
-  width: 252px;
+  width: 100%;
 }
 
 .send_message_button {
   display: flex;
   cursor: pointer;
+}
+
+.send_message_button:hover {
+  filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+  /* background-color: #28cb73; */
 }
 
 .line {
@@ -176,16 +221,13 @@ body {
 }
 
 .text_help textarea {
-  width: 290px;
+  width: 360px;
   height: 115px;
-
   padding: 10px;
-
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #6f5eab;
   box-sizing: border-box;
   border-radius: 4px;
-
   resize: none;
 }
 
@@ -196,11 +238,11 @@ body {
 }
 
 .first_email input {
-  border: 1px solid #dddddd;
+  border: 1px solid #6f5eab;
   box-sizing: border-box;
   border-radius: 4px;
   height: 42px;
-  width: 290px;
+  width: 100%;
 }
 
 input[type="text"]:focus {
@@ -223,9 +265,19 @@ input[type="text"]:focus {
 }
 
 .btn_cancel {
-  border: 0;
+  width: 121px;
+  height: 40px;
+  background: #8257e69c;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 5%;
+}
+
+.btn_cancel:hover {
+  opacity: 0.4;
+  background: red;
 }
 
 .button {
@@ -247,13 +299,77 @@ input[type="text"]:focus {
 
 .date {
   text-align: right;
-  font-size: 1px;
+  font-size: 5px;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.container:hover {
+  box-shadow: rgb(130 87 230) 0px 0px 0px 2px inset;
+}
+
+.value {
+  padding: 10px;
+  margin: 8px;
+  background: #8257e6;
+  color: #fff;
+  border-radius: 2px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.value:hover {
+  opacity: 0.9;
+}
+
+.level {
+  display: flex;
+  margin: 8px;
+  justify-content: space-between;
+  width: 371px;
+}
+
+.text-chat {
+  color: #8257e6;
+}
+
+.close-medu:hover {
+  color: #fff !important;
+  border-radius: 5px !important;
+  background: #8257e6 !important;
+}
+
+.answers {
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-client {
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 8px;
+  border-bottom: 2px solid transparent;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(115, 115, 128);
+  transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
 }
 
 .btn_atd {
   cursor: pointer;
   color: #fff;
-  background: #b32a2a;
+  background: #8257e6;
+  font-weight: bold;
   border: none;
   height: 30px;
   padding: 10px;
@@ -266,8 +382,7 @@ input[type="text"]:focus {
 }
 
 .admin {
-  border: 1px solid #ededed;
-  margin-top: 5px;
+  text-align: right;
 }
 
 .email {
@@ -278,10 +393,11 @@ input[type="text"]:focus {
 .admin_send_message {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .admin_send_message input {
-  width: 300px;
+  width: 100%;
   margin-right: 10px;
 }
 
@@ -292,19 +408,20 @@ input[type="text"]:focus {
 
 .admin_list_messages {
   height: 300px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .admin_message_admin {
+  float: left;
   width: 300px;
-  background: #e0e0e0;
+  background: #28cb73;
   padding: 10px;
   margin: 12px;
   display: flex;
   flex-direction: column;
-
   border-radius: 10px;
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -313,6 +430,7 @@ input[type="text"]:focus {
 }
 
 .admin_message_client {
+  float: right;
   width: 300px;
   background: #6f5eab;
   padding: 10px;
@@ -320,7 +438,6 @@ input[type="text"]:focus {
   color: #eee;
   display: flex;
   flex-direction: column;
-
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
 }
@@ -344,4 +461,14 @@ input[type="text"]:focus {
 
 .btn_send:hover {
   opacity: 0.8;
+}
+
+.text-adm {
+  color: #6f5eab;
+}
+
+.admin_name {
+  color: #eee;
+  font-size: 11px;
+  font-weight: 400;
 }

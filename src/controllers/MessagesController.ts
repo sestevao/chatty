@@ -4,6 +4,7 @@ import { MessagesService } from "../services/MessagesService"
 class MessagesController{
   async create(req:Request, res:Response){
     const { admin_id, user_id, text } = req.body
+
     const messagesService = new MessagesService()
 
     try{
@@ -23,7 +24,9 @@ class MessagesController{
   //localhost:3333/messages/user_id
   async showByUser(req: Request, res:Response){
     const { id } = req.params
+
     const messagesService = new MessagesService()
+    
     const list = await messagesService.listByUser(id)
     return res.json(list)
   }
