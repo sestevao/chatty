@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <title>Client | Chatty</title>
   <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           <span class="name">{{email}}</span>
           <span class="client message">
             {{message}}
-            <label class="date">{{created_at}}</label>
+            <label class="date">{{dayjs(created_at).format("DD/MM/YYYY HH:mm:ss")}}</label>
           </span>
         </div>
       </script>
@@ -36,7 +36,7 @@
         <div class="admin_front">
           <span class="admin_name">Atendente</span>
           <span class="admin message"> {{message_admin}} </span>
-          <label class="date">{{date}}</label>
+          <label class="date">{{created_at}}</label>
         </div>
       </script>
 

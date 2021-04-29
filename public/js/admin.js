@@ -54,16 +54,17 @@ function call(id) {
         //client message
         createDiv.className = "admin_message_client"
 
-        createDiv.innerHTML = `<span class="admin_email">${connection.user.email}</span>`
-        createDiv.innerHTML += `<span>${message.text}</span>`
-        createDiv.innerHTML += `<span class="admin_date">${dayjs(
+        createDiv.innerHTML = `<span class="admin_client_name">${connection.user.email}</span>`
+        createDiv.innerHTML += `<span class="admin_client_message">${message.text}</span>`
+        createDiv.innerHTML += `<span class="admin_client_date">${dayjs(
           message.created_at
         ).format("DD/MM/YYYY HH:mm:ss")}</span>`
       } else {
         //admin message
         createDiv.className = "admin_message_admin"
 
-        createDiv.innerHTML = `Atendente: <span>${message.text}</span>`
+        createDiv.innerHTML = `<span class="admin_name">Atendente</span>`
+        createDiv.innerHTML += `<span class="admin_message">${message.text}</span>`
         createDiv.innerHTML += `<span class="admin_date">${dayjs(
           message.created_at
         ).format("DD/MM/YYYY HH:mm:ss")}</span>`
@@ -89,7 +90,8 @@ function sendMessage(id) {
   const createDiv = document.createElement("div")
 
   createDiv.className = "admin_message_admin"
-  createDiv.innerHTML = `Atendente: <span>${params.text}</span>`
+  createDiv.innerHTML = `<span class="admin_name">Atendente</span>`
+  createDiv.innerHTML += `<span class="admin_message">${params.text}</span>`
   createDiv.innerHTML += `<span class="admin_date">${dayjs().format("DD/MM/YYYY HH:mm:ss")}</span>`
 
   divMessages.appendChild(createDiv)
@@ -112,9 +114,9 @@ socket.on("admin_receive_message", (data) => {
   const createDiv = document.createElement("div")
 
   createDiv.className = "admin_message_client"
-  createDiv.innerHTML = `<span>${connection.user.email}</span>`
-  createDiv.innerHTML += `<span>${data.message.text}</span>`
-  createDiv.innerHTML += `<span class="admin_date">${dayjs(data.message.created_at).format("DD/MM/YYYY HH:mm:ss")}</span>`
+  createDiv.innerHTML = `<span class="admin_client_name">${connection.user.email}</span>`
+  createDiv.innerHTML += `<span class="admin_client_message">${data.message.text}</span>`
+  createDiv.innerHTML += `<span class="admin_client_date">${dayjs(data.message.created_at).format("DD/MM/YYYY HH:mm:ss")}</span>`
 
   divMessages.appendChild(createDiv)
 })

@@ -12,6 +12,8 @@ The support-chat is an app that offers a real-time support chat (like those E-co
 
 This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
 
+<img src="https://github.com/sestevao/chatty/blob/main/.github/Animation.gif?raw=true" alt="projeto">
+
 </br>
 
 ## ✨ Technologies

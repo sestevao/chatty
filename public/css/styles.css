@@ -8,6 +8,7 @@ html {
 body {
   background-image: url("../images/home.jpg");
   background-size: cover;
+  font: 300, 15px, "Roboto", sans-serif;
 }
 
 /* Works on Firefox */
@@ -157,9 +158,9 @@ body {
 }
 
 .text_support {
-  border: 1px solid #cec9c9;
-  max-height: 500px;
   overflow-y: scroll;
+  /* border: 1px solid #cec9c9; */
+  max-height: 500px;
   background-color: #fff;
 }
 
@@ -188,7 +189,7 @@ body {
 .message_send {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #cec9c9;
+  /* border: 1px solid #cec9c9; */
   align-items: center;
   background-color: #fff;
 }
@@ -387,7 +388,7 @@ input[type="text"]:focus {
 
 .email {
   float: left;
-  width: 350px;
+  width: 60%;
 }
 
 .admin_send_message {
@@ -407,15 +408,16 @@ input[type="text"]:focus {
 }
 
 .admin_list_messages {
-  height: 300px;
-  overflow-y: auto;
+  height: 400px;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 }
 
 .admin_message_admin {
   float: left;
-  width: 300px;
+  width: 320px;
+  color: rgb(238, 238, 238);
   background: #28cb73;
   padding: 10px;
   margin: 12px;
@@ -425,13 +427,14 @@ input[type="text"]:focus {
   font-family: "Roboto", sans-serif;
 }
 
+
 #atendimentos {
   width: 600px;
 }
 
 .admin_message_client {
   float: right;
-  width: 300px;
+  width: 320px;
   background: #6f5eab;
   padding: 10px;
   margin: 10px;
@@ -443,20 +446,48 @@ input[type="text"]:focus {
 }
 
 .admin_date {
-  font-size: 10px;
-  color: #fff;
+  font-size: 11px;
+  color: #eee;
+  text-align: start;
+}
+
+.admin_name {
+  color: #eee;
+  text-align: start;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.admin_client_message {
+  text-align: start;
+}
+
+.admin_client_date {
+  font-size: 11px;
+  text-align: end;
+  color: #eee;
+}
+
+.admin_client_name {
+  color: #eee;
+  font-size: 11px;
+  text-align: end;
+  font-weight: 400;
 }
 
 .in_support {
   background: #8d7aef;
   color: #fff;
   font-size: 17px;
+  margin: 2px;
 }
 
 .btn_send {
   background: #1eb363;
   color: #eee;
   border: none;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .btn_send:hover {
@@ -465,10 +496,4 @@ input[type="text"]:focus {
 
 .text-adm {
   color: #6f5eab;
-}
-
-.admin_name {
-  color: #eee;
-  font-size: 11px;
-  font-weight: 400;
 }
