@@ -21,13 +21,13 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 ## 🚀 Features
 
 - [x]  Administrator
-    - [ ]  Turn chat on and off
-    - [ ]  Check which users have not yet been served
-    - [ ]  Upon entering the service the user leaves the list of pending
-    - [ ]  Receive and send messages in real time
+    - [x]  Turn chat on and off
+    - [x]  Check which users have not yet been served
+    - [x]  Upon entering the service the user leaves the list of pending
+    - [x]  Receive and send messages in real time
 - [x]  Client
-    - [ ]  Enter chat
-    - [ ]  Receive and send messages in real time
+    - [x]  Enter chat
+    - [x]  Receive and send messages in real time
 
 <br>
 
