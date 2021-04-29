@@ -1,12 +1,12 @@
-<h2 align="center"><img width="150px" style="border-radius: 50%;" src="https://github.com/susanaestevao/chatty/blob/main/public/images/chat-bot.jpg?raw=true" /></h2>
+<img width=150 style="border-radius:50%; text-align:center" src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" />
 
 <h2 align="center">Real time support chat with websockets</h2>
 
-<p align="center" style="color: lightblue">“What we know is a drop. <br>What we ignore is an ocean.” - <em>Isaac Newton</em></p>
+<p align="center" style="color:lightblue; font-style:italic;">“What we know is a drop. What we ignore is an ocean.” - <em>Isaac Newton</em></p>
 
 </br>
 
-## 💻 Project
+## 💻 About the Project
 
 The support-chat is an app that offers a real-time support chat (like those E-commerce chats)
 
@@ -14,7 +14,20 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 
 <img src="https://github.com/sestevao/chatty/blob/main/.github/Animation.gif?raw=true" alt="projeto">
 
-</br>
+<br>
+
+## 🚀 Features
+
+- [ ]  Administrator
+    - [ ]  Turn chat on and off
+    - [ ]  Check which users have not yet been served
+    - [ ]  Upon entering the service the user leaves the list of pending
+    - [ ]  Receive and send messages in real time
+- [ ]  Client
+    - [ ]  Enter chat
+    - [ ]  Receive and send messages in real time
+
+<br>
 
 ## ✨ Technologies
 In this project we use:
@@ -26,7 +39,7 @@ In this project we use:
 - [SQLite](https://www.sqlite.org/index.html), as SQL database.
 - [Mustache](https://mustache.github.io/)
 
-</br>
+<br>
 
 ## ❗️ Requisites
 To run aplication we need have installed:
@@ -36,9 +49,9 @@ To run aplication we need have installed:
 - [Beekeeper Studio](https://www.beekeeperstudio.io/)
 - [Insomnia](https://insomnia.rest/)
 
-</br>
+</>
 
-## 🚀 How to run
+## ⚡ How to run
 
 - Clone this repo
 - Install all dependencies with `yarn`
@@ -48,7 +61,7 @@ To run aplication we need have installed:
 To run this app in a web browser
 navigate to `localhost:3333/pages/admin` and `localhost:3333/pages/client` and enjoy sending messages.
 
-</br>
+<br>
 
 ## 📚 Environment Configuration:
 - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
