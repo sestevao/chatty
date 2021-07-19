@@ -1,6 +1,6 @@
 const socket = io()
 let connectionsUsers = []
-let connectionInSupport = [] //Cria uma variavel para armazenar os atendimentos
+let connectionInSupport = [] //Create a variable to store the calls
 
 socket.on("admin_list_all_users", (connections) => {
   connectionsUsers = connections
@@ -24,7 +24,7 @@ function call(id) {
     (connection) => connection.socket_id === id
   )
 
-  connectionInSupport.push(connection) //Quando encontrar a conexao, coloca dentro do array de atendimentos
+  connectionInSupport.push(connection) //When it finds the connection, it puts it inside the service array
 
   const template = document.getElementById("admin_template").innerHTML
 
@@ -63,7 +63,7 @@ function call(id) {
         //admin message
         createDiv.className = "admin_message_admin"
 
-        createDiv.innerHTML = `<span class="admin_name">Atendente</span>`
+        createDiv.innerHTML = `<span class="admin_name">Attendant</span>`
         createDiv.innerHTML += `<span class="admin_message">${message.text}</span>`
         createDiv.innerHTML += `<span class="admin_date">${dayjs(
           message.created_at
@@ -102,7 +102,7 @@ function sendMessage(id) {
 socket.on("admin_receive_message", (data) => {
   console.log(data)
 
-  //Aqui utiliza o array de atendimento que foi inserido acima
+  //Here it uses the service array that was entered above
   const connection = connectionInSupport.find(
     (connection) => connection.socket_id = data.socket_id
   )
