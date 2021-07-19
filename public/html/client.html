@@ -35,7 +35,7 @@
 
         <script id="admin-template" type="text/template">
           <div class="admin_front">
-            <span class="admin_name">Attendant:</span>
+            <span class="admin_name">Attendant</span>
             <span class="admin message"> {{message_admin}} </span>
             <label class="date">{{created_at}}</label>
           </div>
@@ -94,7 +94,7 @@
 
     <div>
       <button class="btn_support" id="btn_support" onClick="openChat();">
-        <img src="/images/chat.png" /> Suport
+        <img src="/images/chat.png" /> Support
       </button>
     </div>
   </body>
@@ -122,9 +122,9 @@
     }
 
     function keyUpTextHelp(event) {
-      const charac_remaining = document.getElementById("charac_remaining");
+      const character_remaining = document.getElementById("character_remaining");
       const length_text = event.target.value.length;
-      charac_remaining.innerHTML = Number(250) - Number(length_text);
+      character_remaining.innerHTML = Number(250) - Number(length_text);
     }
   </script>
   <script src="/socket.io/socket.io.js"></script>
