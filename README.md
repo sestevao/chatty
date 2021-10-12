@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" width=150 />
-  <pre>“What we know is a drop. What we ignore is an ocean.” - <em>Isaac Newton</em></pre>
+  <pre>What we know is a drop. What we ignore is an ocean. <em>Isaac Newton</em></pre>
 </div>
 
 ## 💻 About the Project
