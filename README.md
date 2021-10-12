@@ -1,16 +1,15 @@
-<div align="center">
-  <img style="border-radius:50%;" src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" width=150 />
-</div>
-
 <h2 align="center">Real time support chat with websockets</h2>
 
-<p align="center" style="color:lightblue; font-style:italic;">“What we know is a drop. What we ignore is an ocean.” - <em>Isaac Newton</em></p>
+<div align="center">
+  <img src="https://github.com/sestevao/chatty/blob/main/.github/chat-bot.jpg?raw=true" width=150 />
+  <pre>“What we know is a drop. What we ignore is an ocean.” - <em>Isaac Newton</em></pre>
+</div>
 
 ## 💻 About the Project
 
-The support-chat is an app that offers a real-time support chat (like those E-commerce chats)
+The support-chat is an app that offers a real-time support chat (like those E-commerce chats).
 
-This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
+This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week) from @rocketseat during April 19-25, 2021. We learned concepts about what is an API, starting a project using Typescript and Express for route management.
 
 <img src="https://github.com/sestevao/chatty/blob/main/.github/Animation.gif?raw=true" alt="projeto">
 
@@ -25,13 +24,13 @@ This project was developed during the Node.js path in the fifth edition of NLW (
   - [x] Enter chat
   - [x] Receive and send messages in real time
   
-## 🚀 Requisites
+## 🚀 Requirements
 
 - [Node.js](https://nodejs.org/en/)
 - [yarn](https://yarnpkg.com/) (Optional)
 - [Beekeeper Studio](https://www.beekeeperstudio.io/)
 - [Insomnia](https://insomnia.rest/)
-- 
+
 ## ✨ Technologies
 
 - [Express](https://expressjs.com/)
@@ -48,10 +47,9 @@ This project was developed during the Node.js path in the fifth edition of NLW (
 - Install the migrations `yarn typeorm migration:run`
 - Start the server with `yarn dev`
 
-To run this app in a web browser
-navigate to `localhost:3333/pages/admin` and `localhost:3333/pages/client` and enjoy sending messages.
+To run this app in a web browser navigate to `localhost:3333/pages/admin` and `localhost:3333/pages/client` and enjoy sending messages.
 
-Can access using the https://chatty-nodejs.netlify.com
+Can access using the https://
 
 ## 🎨 Layout
 
