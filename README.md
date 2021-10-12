@@ -7,9 +7,9 @@
 
 ## 💻 About the Project
 
-The support-chat is an app that offers a real-time support chat (like those E-commerce chats).
+The support-chat is an app that offers a real-time support chat (like those E-commerce chats). We learned concepts about what is an API, starting a project using Typescript and Express for route management.
 
-This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week) from @rocketseat during April 19-25, 2021. We learned concepts about what is an API, starting a project using Typescript and Express for route management.
+This project was developed during the Node.js path in the fifth edition of NLW (Next Level Week) from @rocketseat during April 19-25, 2021. 
 
 <img src="https://github.com/sestevao/chatty/blob/main/.github/Animation.gif?raw=true" alt="projeto">
 
@@ -55,8 +55,6 @@ Can access using the https://
 
 - [Trilha NodeJS - Notion](https://www.notion.so/Trilha-Node-js-0b238db0256c4ce889df0e9ce92f4a68)
 - [My notes on Notion](https://www.notion.so/Trilha-Node-js-99e5035e5dfb425fa86292f91ff352ba)
-
-## 🔥 Additional functionalities
 
 ## 📝 License
 
